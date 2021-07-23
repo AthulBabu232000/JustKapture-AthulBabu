@@ -9,9 +9,13 @@ function primeNos(newArr) {
       prime.push(nos);
     }
   });
-  prime = prime.toString();
-
+  if(prime.length == 0){
+      return `${prime}`
+  }
+else{
+    
   return `(${prime})`;
+}
 }
 
 function fibonacci(count) {
@@ -65,4 +69,14 @@ function add(){
 
     displayContent(innerCount, fibinit);
     
+}
+
+
+function deleteIt(){
+
+    var tr = document.querySelectorAll('tr')
+    if(innerCount > 0){
+ tr[tr.length - 1].remove()
+ innerCount = innerCount - 1;
+    }
 }

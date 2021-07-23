@@ -74,6 +74,18 @@ border-collapse:collapse;
     background-color:var(--trClr2);
 
 }
+#fibonacci tr:nth-child(even):hover , #fibonacci tr:nth-child(odd):hover{
+    opacity:0.89;
+}
+#fibonacci tr:first-child:hover{
+    opacity:1;
+}
+
+
+#contentCreate{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 
@@ -84,14 +96,21 @@ border-collapse:collapse;
     background-color:var(--headClr);
     margin-top:20px;
     margin-left:25px;
-    border:1px solid white;
+    border:1px solid var(--trClr);
     color:black;
     font-weight:bolder;
 }
+#contentCreate .btn:first-child{
+    background-color:rgba(13, 241, 13, 0.877);
+}
 
+#contentCreate .btn:last-child{
+    background-color:rgb(247, 23, 23);
+}
 #contentCreate .btn:hover{
-    background-color:var(--headClr);
-    color:white;
+    background-color:var(--trClr);
+    color:var(--headClr);
+    border:1px solid var(--headClr);
 }
 
 
