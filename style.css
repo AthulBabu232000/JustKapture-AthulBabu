@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --bgClr: #151515;
+    --color: #fff;
+    --headClr: #FFD369;
+    --trClr:#222831;
+    --trClr2: #393E46;
+    --caption:#EEEEEE;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
+}
+
+body{
+    background-color:var(--bgClr);
+}
+
+.outerContainer{
+    width:100%;
+    min-height:100vh;
+    font-family: 'Montserrat', sans-serif;
+    padding:20px;
+    
+
+}
+
+#caption{
+    text-align:center;
+    text-transform:capitalize;
+    color:var(--headClr);
+    margin-bottom:15px;
+}
+
+
+.innerContainer{
+    width:100%;
+    overflow-x:auto;
+    overflow-y:auto;
+    height:80vh;
+   
+}
+#fibonacci{
+    width:100%;
+border-collapse:collapse;
+
+
+}
+
+#fibonacci th{
+    border:1px solid #000;
+    padding:15px;
+    background-color:var(--headClr);
+}
+
+
+#fibonacci td{
+    border:1px solid #000;
+    padding:10px;
+    text-align:center;
+    color:var(--headClr);
+    font-family:sans-serif;
+}
+
+#fibonacci tr:nth-child(even){
+    background-color:var(--trClr);
+
+}
+
+#fibonacci tr:nth-child(odd){
+    background-color:var(--trClr2);
+
+}
+
+
+
+#contentCreate .btn{
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:var(--headClr);
+    margin-top:20px;
+    margin-left:25px;
+    border:1px solid white;
+    color:black;
+    font-weight:bolder;
+}
+
+#contentCreate .btn:hover{
+    background-color:var(--headClr);
+    color:white;
+}
+
+
