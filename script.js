@@ -2,12 +2,30 @@
 function primeNos(newArr) {
   
   var prime = [];
+ 
   newArr.forEach((nos) => {
-    if (nos == 2) {
+   
+    if (nos == 2 || nos == 3) {
       prime.push(nos);
-    } else if (nos > 2 && nos % 2 != 0) {
-      prime.push(nos);
+    } else if (nos > 3) {
+      flag = true;
+      for(let k = 2; k < nos; k++ ){
+        if(nos%k == 0){
+          flag = false;
+          break;
+        }else{
+          flag = true;
+        }
+      }
+
+      if(flag == true){
+        prime.push(nos);
+      }
+
+    
     }
+
+
   });
   if(prime.length == 0){
       return `${prime}`
